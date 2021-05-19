@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 60vw;
+}
+
+.try button {
+  padding: 0.9rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  background: white;
+  box-shadow: -3px 2px 9px 1px rgba(0, 0, 0, 0.25);
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: -15vh;
+  z-index: -4;
+  background: hsl(193, 100%, 96%);
+  background-image: url(../images/bg-hero-desktop.svg);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  width: 40vw;
+}
+
+.home-text h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.home-text p {
+  margin: 4vh 0vh;
+}
+
+.home-img img {
+  width: 45vw;
+}
+
+.start {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  background: hsl(322, 100%, 66%);
+  color: white;
+}
+
+.second {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5vh 0vh;
+}
+
+.card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.card-text {
+  width: 40vw;
+}
+
+.card-img {
+  width: 30vw;
+}
+
+.card-text h1 {
+  font-size: 1.8rem;
+}
+
+.card-text p {
+  width: 90%;
+  margin: 4vh 0vh;
+}
+
+.input-section {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+
+.input-box {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: -10vh;
+  background: white;
+  padding: 0rem 5rem;
+  border-radius: 3rem;
+}
+
+footer {
+  width: 100vw;
+  height: 60vh;
+  background: hsl(192, 100%, 9%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section1 {
+  width: 25vw;
+  color: white;
+}
+
+.section-card {
+  display: flex;
+  display: flex;
+  align-items: center;
+  margin: 4vh 0vh;
+}
+
+.section-card img {
+  margin: 0vh 2vh;
+}
+
+footer ul {
+  list-style: none;
+  color: white;
+  line-height: 2.5rem;
+}
+
+footer h6 {
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .home {
+    height: auto;
+  }
+  .home-text {
+    width: 90vw;
+    margin-top: 15vh;
+  }
+  .home-text h1 {
+    font-size: 2rem;
+  }
+  .home-img img {
+    width: 90vw;
+    margin: 5vh 0vh;
+  }
+  .logo img {
+    width: 130px;
+    margin: 0vh 2vh;
+  }
+  .try button {
+    padding: 0.8rem 2.5rem;
+  }
+  .card {
+    width: 90vw;
+    height: auto;
+    padding: 2vh 4vh;
+    border-radius: 2rem;
+  }
+  .card-img {
+    width: 60vw;
+  }
+  .card-text {
+    width: 80vw;
+  }
+  .input-section {
+    height: 50vh;
+  }
+  .input-box {
+    width: 90vw;
+    margin-bottom: -35vh;
+    display: grid;
+    place-items: center;
+    .start {
+      padding: 0.8rem 4rem;
+    }
+  }
+  .input-box h1 {
+    font-size: 1.2rem;
+    width: 80vw;
+  }
+  footer {
+    height: auto;
+    flex-direction: column;
+    padding-top: 8rem;
+  }
+  .section1 {
+    width: 80vw;
+  }
+}
